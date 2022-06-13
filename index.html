@@ -10,13 +10,13 @@
 
   <link rel="stylesheet" type="text/CSS" href="./Resources/style.css">
 
-  <script src="./main.js" defer></script>
+  <script src="./Resources/main.js" defer></script>
 
 </head>
 <body>
 
   <!-- Rating state start -->
-  <main class="content-1 active">
+  <main id="main" class="main-content active">
     <div class="image"><img src='./Resources/images/icon-star.svg'></div>
     <div class="content">
       <h1>How did we do?</h1>
@@ -26,29 +26,26 @@
     <form>
       <div class="buttons">
         <button class="number" value="1" type = "button">1</button>
-        <button class="number" value="1" type = "button">2</button>
-        <button class="number" value="1" type = "button">3</button>
-        <button class="number" value="1" type = "button">4</button>
-        <button class="number" value="1" type = "button">5</button>
+        <button class="number" value="2" type = "button">2</button>
+        <button class="number" value="3" type = "button">3</button>
+        <button class="number" value="4" type = "button">4</button>
+        <button class="number" value="5" type = "button">5</button>
       </div>
-      <input type="submit" class="submit" value="submit">
+      <input id="submit" type="button" class="submit" value="SUBMIT">
     </form>
   </main>
 
   
 
   
-  <section class="content-2 hidden">
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+  <section id="thanks" class="main-content thanks hidden">
+  <img src="./Resources/images/illustration-thank-you.svg">
+  <div class="score">
+    <p class="text">You selected <em id="scored"></em> out of 5</p>
+  </div>
+  <h2>Thank you!</h2>
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
   </section>
 
 </body>
